@@ -1,0 +1,86 @@
+{
+    "csv_file": "data/dogs.csv",
+    "image_path": "data/images/",
+    "image_dim": 64,
+    "target": {
+        "checkpoint": "./checkpoints/target/",
+        "frozen_checkpoint": "./checkpoints/frozen_target_{layer}/",
+        "learning_rate": 1e-3,
+        "batch_size": 32,
+        "num_classes": 2
+    },
+    "vit": {
+        "checkpoint": "./checkpoints/vit/",
+        "learning_rate": 1e-3,
+        "batch_size": 32,
+        "num_classes": 2
+    },
+    "source": {
+        "checkpoint": "./checkpoints/source/",
+        "learning_rate": 1e-3,
+        "batch_size": 64,
+        "num_classes": 8
+    },
+    "challenge": {
+        "checkpoint": "./checkpoints/adamWvit_transfer_image_aug_label_smoothing_head8_0.05/",
+        "learning_rate": 1e-3,
+        "batch_size": 32,
+        "num_classes": 2,
+        "best_epoch": 178
+    },
+    "source_vit": {
+        "checkpoint": "./checkpoints/source_vit/",
+        "learning_rate": 1e-3,
+        "batch_size": 32,
+        "num_classes": 8
+    },
+    "deep_vit": {
+        "checkpoint": "./checkpoints/deepvit/",
+        "learning_rate": 1e-3,
+        "batch_size": 32,
+        "num_classes": 2
+    },
+    "adamWvit": {
+        "checkpoint": "./checkpoints/adamWvit/",
+        "learning_rate": 5e-4,
+        "batch_size": 64,
+        "num_classes": 2
+    },
+    "adamWvit_source": {
+        "checkpoint": "./checkpoints/adamWvit_source/",
+        "learning_rate": 5e-4,
+        "batch_size": 32,
+        "num_classes": 8,
+        "best_epoch": 1
+    },
+    "resnet18_source": {
+        "checkpoint": "./checkpoints/resnet18_source/",
+        "learning_rate": 5e-4,
+        "batch_size": 32,
+        "num_classes": 8
+    },
+    "resnet18_target": {
+        "checkpoint": "./checkpoints/resnet18_target/",
+        "learning_rate": 5e-4,
+        "batch_size": 32,
+        "num_classes": 2
+    },
+    "resnet18_transfer": {
+        "checkpoint": "./checkpoints/resnet18_transfer/",
+        "learning_rate": 5e-4,
+        "batch_size": 32,
+        "num_classes": 2
+    },
+    "adamWvit_source_image_aug": {
+        "checkpoint": "./checkpoints/adamWvit_source_image_aug_label_smoothing_head8_0.05/",
+        "learning_rate": 1e-4,
+        "batch_size": 64,
+        "num_classes": 8
+    },
+    "adamWvit_transfer_image_aug_mlp_only": {
+        "checkpoint": "./checkpoints/adamWvit_transfer_image_aug_label_smoothing_head8_0.05/",
+        "learning_rate": 1e-4,
+        "batch_size": 64,
+        "num_classes": 2
+    }
+}
